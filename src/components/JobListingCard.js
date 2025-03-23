@@ -24,7 +24,7 @@ function JobListingCard({ job }) {
                 <div className="column-eight">
                     <img src={location} alt="location" />
                 </div>
-                <div className="column-seven">
+                <div className="column-nine">
                     <label className="font-size-12">{jobLocation}</label>
                 </div>
             </div>
@@ -33,7 +33,7 @@ function JobListingCard({ job }) {
                 <div className="column-eight">
                     <img src={clock} alt="clock" />
                 </div>
-                <div className="column-seven">
+                <div className="column-nine">
                     <label className="font-size-12">
                         {jobListed} | {jobApplicants}
                     </label>

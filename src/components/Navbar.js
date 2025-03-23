@@ -113,7 +113,7 @@ function Navbar() {
                         </div>
 
                         {/* profile */}
-                        <div>
+                        <div className="profile-pic-wrapper">
                             <img className="profile-pic" src={profilePic} alt="profile" />
                         </div>
                     </div>
