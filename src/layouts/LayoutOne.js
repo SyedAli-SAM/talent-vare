@@ -94,19 +94,22 @@ function LayoutOne() {
     return (
         <div className="container">
             <div className="row py-10">
-                <div className="column-six" style={{ backgroundColor: "red" }}>
+                <div className="column-six">
                     <div className="member-info-card">
                         <MemberInfo />
                         <MemberAnalytics />
                         <MemberUpcomingEvents />
                     </div>
                 </div>
-                <div className="column-seven" style={{ backgroundColor: "lightcyan" }}>
+                <div className="column-seven">
                     <JobSearch />
                     <hr />
                     {listingData.length > 0 &&
                         listingData.map((jobListings, index) => (
-                            <JobListing jobListings={jobListings} index={index} />
+                            <>
+                                <JobListing jobListings={jobListings} index={index} />
+                                {index !== listingData.length - 1 && <hr />}
+                            </>
                         ))}
                 </div>
             </div>

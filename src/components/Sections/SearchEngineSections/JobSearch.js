@@ -17,7 +17,7 @@ function JobSearch() {
             <div className="search-engine">
                 <CustomInput
                     type="text"
-                    placeholder="Job Title, Keywords, or Company"
+                    placeholder="Job Title, Company, or Keywords"
                     CustomStyles="job-search-input"
                     CustomStylesForWrapper="job-search-input-wrapper"
                     isIcon={false}

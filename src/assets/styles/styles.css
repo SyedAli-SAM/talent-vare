@@ -6,11 +6,13 @@
     --danger-color: #e74c3c;
     --text-color: #333333;
     --background-color: #ffffff;
+    --body-background-color: #f4f4f4;
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--body-background-color);
     color: var(--text-color);
+    margin: 0px;
 }
 
 a {
@@ -32,8 +34,7 @@ hr {
 
 /* general styles for the app */
 .container {
-    padding: 0 20px;
-    background-color: rgb(255, 178, 178);
+    padding: 10px 20px;
 }
 
 .rounded-container {
@@ -61,14 +62,12 @@ hr {
     width: 60%;
     display: flex;
     align-items: center;
-    background-color: rgb(200, 200, 255);
 }
 
 .column-two {
     width: 35%;
     display: flex;
     align-items: center;
-    background-color: rgb(201, 247, 201);
     gap: 10px;
 }
 
@@ -128,6 +127,10 @@ hr {
 
 .pt-5 {
     padding-top: 5px;
+}
+
+.pt-10 {
+    padding-top: 10px;
 }
 
 .pt-15 {
@@ -241,33 +244,39 @@ hr {
     height: 30px;
     border: unset;
     border-right: 1px solid #e9ecef;
+    font-size: 15px;
 }
 
 .location-dropdown-wrapper {
     width: 15%;
     height: 30px;
-    padding: 0px 0px;
+    padding: 0px 15px;
     border-right: 1px solid #e9ecef;
     align-content: center;
 }
 
 .location-dropdown {
-    width: 110px;
+    width: 130px;
     outline: unset;
     border: unset;
+    font-size: 14px;
+    color: var(--secondary-color);
 }
 
 .job-type-dropdown-wrapper {
     width: 15%;
     height: 30px;
-    padding: 0px 0px;
+    padding: 0px 15px;
+    border-right: 1px solid #e9ecef;
     align-content: center;
 }
 
 .job-type-dropdown {
-    width: 110px;
+    width: 90px;
     outline: unset;
     border: unset;
+    font-size: 14px;
+    color: var(--secondary-color);
 }
 
 .search-button {
@@ -305,7 +314,7 @@ hr {
 
 .member-info-profile-pic-wrapper {
     position: absolute;
-    top: 120px;
+    top: 140px;
 }
 
 .member-info-profile-pic {
@@ -317,12 +326,13 @@ hr {
 }
 
 .member-info-details {
-    width: 60%;
+    width: 72%;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 5px;
     margin: 40px 0px 20px 0px;
+    text-align: center;
 }
 
 /* css for member analytics */
@@ -389,6 +399,10 @@ hr {
     border: 1px solid #737a91;
     border-radius: 8px;
     padding: 10px 20px;
+}
+
+.button-extra-padding {
+    padding: 10px 30px;
 }
 
 /* css for profile pic */

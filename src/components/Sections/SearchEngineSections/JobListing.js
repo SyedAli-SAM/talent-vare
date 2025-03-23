@@ -14,7 +14,7 @@ function JobListing({ jobListings = {} }) {
                 </a>
             </div>
 
-            <div className="flex gap-16">
+            <div className="flex gap-16 pt-10">
                 {Jobs.length > 0 && Jobs.map((job, index) => <JobListingCard job={job} key={index} />)}
             </div>
         </div>

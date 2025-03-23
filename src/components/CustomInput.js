@@ -35,7 +35,7 @@ function CustomInput({
             {isLocation && (
                 <div className="location-dropdown-wrapper">
                     <select className="location-dropdown">
-                        <option value="1">1</option>
+                        <option value="1">Select Location</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
@@ -45,7 +45,7 @@ function CustomInput({
             {isJobType && (
                 <div className="job-type-dropdown-wrapper">
                     <select className="job-type-dropdown">
-                        <option value="1">1</option>
+                        <option value="1">Job Type</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
@@ -53,11 +53,12 @@ function CustomInput({
             )}
 
             {isSearchButton && (
-                // <button className="button button-wrapper button-with-icon">
-                //     <img src={search_white} alt="search" />
-                //     Search
-                // </button>
-                <CustomButton CustomStyles="button" CustomStylesForWrapper="button-wrapper" text="Search" isIcon={true} />
+                <CustomButton
+                    CustomStyles="button"
+                    CustomStylesForWrapper="button-wrapper button-extra-padding"
+                    text="Search"
+                    isIcon={true}
+                />
             )}
         </div>
     );
